@@ -4,14 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="base.css">
+
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function ajustaRodape() {
+            const rodape = document.getElementById("rodape");
+            if (!rodape) return;
+
+            if (document.documentElement.scrollHeight > window.innerHeight) {
+                rodape.style.position = "static";
+            } else {
+                rodape.style.position = "fixed";
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', ajustaRodape);
+        window.addEventListener('resize', ajustaRodape);
+    </script>
 </head>
 <body>
-    <h1> CLAUBER ANTONIO PAESCA </h1>
-
-Sou programador. Estudo Engenharia de Software na Universidade Tecnológica Federal do Paraná. 
-Desenvolvi um sistema para o CRAS de Sertaneja, O sistema é online e armazena os dados dos Usuários e atendimentos do CRAS. Sou autista. Tenho vários projetinhos que implemento aos poucos.
-Atualmente estou concluindo um aplicativo de templates de imagens. Gosto de ciências, principalmente astronomia e astrofísica. 
-
-</body>
+    <header>
+        <h1>Currículo</h1>
+        <h2>Clauber Antonio Paesca</h2>
+    </header>
+        <main>
+            <p>Olá, meu nome é Clauber Antonio Paesca.</p>
+               <p><strong>Sou programador.</strong></p>
+            <p>Estudo Engenharia de Software na Universidade Tecnológica Federal do Paraná.</p>
+            <p>Desenvolvi um sistema para o CRAS de Sertaneja:</p>
+                <ul>
+                    <li>O sistema é online.</li>
+                    <li>Armazena os dados dos Usuários e atendimentos do CRAS. </li>
+                    <li>Desenvolvi o sistema com Python, Flask e MySQL.</li>
+                </ul>
+            <p class="text-danger"><strong>Sou autista.</strong></p>
+            <p>Tenho vários projetinhos que implemento aos poucos.</p>
+            <p>Atualmente estou concluindo um aplicativo de templates de imagens.</p>
+            <p>Gosto de ciências, principalmente astronomia e astrofísica.</p>
+        </main>
+        <footer id="rodape">
+            <span class="text-muted">Desenvolvido por Clauber Antonio Paesca</span>
+            <span class="text-muted"> | </span>
+            <span class="text-muted">Versão 1.0</span>
+            <span class="text-muted"> | </span>
+            <span class="text-muted">Data: 2025-03-28</span>
+        </footer>
+    </body>
 </html>
 

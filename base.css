@@ -1,0 +1,35 @@
+header  {
+            background-color: #0c46a0;
+			width: auto;
+			height: 150px;
+		}
+header h1 {
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+header h2 {
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+main    {
+            align-self: center;
+            height:300px;
+        }
+main p {
+            font-weight: normal;
+        }
+footer  {
+			background-color: #f2f2f2;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            margin-top: auto;
+            position: static;
+            bottom: 0;
+		}
+body    {
+
+	    }
